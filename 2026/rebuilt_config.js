@@ -176,9 +176,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
+        "0": "Not Effective<br>",
+        "1": "Average<br>",
+        "2": "Very Effective<br>",
         "x": "Not Observed"
       },
       "defaultValue": "x"
@@ -187,10 +187,10 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "0": "Below Average<br>",
+        "1": "Average<br>",
+        "2": "Good<br>",
+        "3": "Excellent<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
@@ -252,7 +252,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 10000
     }
   ]
 }`;
