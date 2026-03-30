@@ -23,13 +23,13 @@ var config_data = `
       "code": "drv",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
+        "Swerve": "Swerve<br>",
+        "Tank": "West Coast/Tank<br>",
+        "Butterfly/GrassHopper": "Butterfly/Grashopper<br>",
+        "Mechanum": "Mechanum<br>",
+        "Other": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "Other"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -37,27 +37,26 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
+    { "name": "Turret Number/Width",
+      "code": "tnw",
       "type": "radio",
       "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
+        "1": "Single Turret<br>",
+        "2": "Double Turret/2 Wide Dumper<br>",
+        "3": "Triple Turret/3 Wide Dumper<br>",
+        "4": "4 Wide Dumper<br>",
+        "Other": "Other ratio (put in comments)<br>",
       },
-      "defaultValue":"x"
+      "defaultValue":"Other"
     },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
       "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
-        "k": "Kraken<br>"
+        "Neo": "Neo<br>",
+        "Falcon": "Falcon<br>",
+        "CIM": "CIM<br>",
+        "Kraken": "Kraken<br>"
       },
       "defaultValue":"n"
     },
@@ -69,11 +68,11 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
-    { "name": "Depot pickup Fuel",
+    { "name": "Depot pickup Fuel (Square thing on Floor)",
       "code": "dpu",
       "type": "bool"
     },
-    { "name": "Outpost pickup Fuel",
+    { "name": "Outpost pickup Fuel (Human Player Station",
       "code": "opu",
       "type": "bool"
     },
