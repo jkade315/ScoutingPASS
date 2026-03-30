@@ -23,13 +23,13 @@ var config_data = `
       "code": "drv",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
+        "Swerve": "Swerve<br>",
+        "Tank": "West Coast/Tank<br>",
+        "Butterfly": "Butterfly/Grashopper<br>",
+        "Mechanum": "Mechanum<br>",
+        "Other": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "Other"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -37,29 +37,28 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
+    { "name": "Turret Width",
+      "code": "tn",
       "type": "radio",
       "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
+        "1": "1 Ball/Single Turret<br>",
+        "2": "2 Balls/Double Turret<br>",
+        "3": "3 Balls/Triple Turret<br>",
+        "4": "4 Balls/Full Size<br>",
+        "Other": "Other(put in comments)<br>",
       },
-      "defaultValue":"x"
+      "defaultValue":"1"
     },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
       "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
-        "x": "Other<br>"
+        "Neo": "Neo<br>",
+        "Falcon": "Falcon<br>",
+        "CIM": "CIM<br>",
+        "Other": "Other<br>"
       },
-      "defaultValue":"x"
+      "defaultValue":"Other"
     },
     { "name": "# of Batteries",
       "code": "nob",
