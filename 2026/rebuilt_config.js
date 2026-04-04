@@ -248,14 +248,15 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-      { "name": "Shooter Rate",
+      { "name": "Shooter Rating",
       "code": "sr",
       "type": "radio",
       "choices": {
         "1": "1 (very slow)<br>",
         "2": "2<br>",
         "3": "3<br>",
-        "4": "3 (almost instant)"
+        "4": "4<br>",
+        "5": "5 (very fast)"
       },
       "defaultValue":"3"
     },
